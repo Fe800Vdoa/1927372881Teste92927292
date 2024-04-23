@@ -20,18 +20,18 @@ Tab1:Label("Brazilian Script By Harlen_Br0")
 
 Tab1:Line()
 
-Tab4:Label("⬇️ - The Normal Speed This 16 - ⬇️")
+Tab1:Label("⬇️ - The Normal Speed This 16 - ⬇️")
 
-Tab4:Slider("🏃 • Walk Speed",16,300,16,function(value)
+Tab1:Slider("🏃 • Walk Speed",16,300,16,function(value)
         local player = game.Players.LocalPlayer
 local humanoid = player.Character.Humanoid
 
 humanoid.WalkSpeed = value
     end)
 
-Tab4:Label("⬇️ - The Normal Jump Power This 50 - ⬇️")
+Tab1:Label("⬇️ - The Normal Jump Power This 50 - ⬇️")
 
-Tab4:Slider("🦘 • Jump Power",50,300,50,function(jumpp)
+Tab1:Slider("🦘 • Jump Power",50,300,50,function(jumpp)
         local JP = jumpp
 local Valor = JP
     end)
