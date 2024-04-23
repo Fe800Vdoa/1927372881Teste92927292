@@ -1,0 +1,53 @@
+local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/Hub", true))()
+
+--- Window
+
+local Library = DarkraiX:Window("Harlen Hub","Teste","",Enum.KeyCode.RightControl);
+
+--- Botão
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/ButtonIJheushauuaya7Ha7auuahd-s/main/ButtonIahhwuaha7wg7wyee8"))()
+
+--- Tabs
+
+Tab1 = Library:Tab("🎯┃Misc")
+
+--- Section
+
+Tab1:Label("Brazilian Script By Harlen_Br0")
+
+--- Botões
+
+Tab1:Line()
+
+Tab4:Label("⬇️ - The Normal Speed This 16 - ⬇️")
+
+Tab4:Slider("🏃 • Walk Speed",16,300,16,function(value)
+        local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.WalkSpeed = value
+    end)
+
+Tab4:Label("⬇️ - The Normal Jump Power This 50 - ⬇️")
+
+Tab4:Slider("🦘 • Jump Power",50,300,50,function(jumpp)
+        local JP = jumpp
+local Valor = JP
+    end)
+
+Tab1:Toggle("Activated",false,function(toggle)
+ if toggle == true then
+local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.JumpPower = Valor
+ end
+
+ if toggle == false then
+local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.JumpPower = 50
+ end
+    end)
