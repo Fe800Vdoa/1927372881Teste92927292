@@ -51,3 +51,6 @@ local humanoid = player.Character.Humanoid
 humanoid.JumpPower = 50
  end
     end)
+
+--[[
+]]
